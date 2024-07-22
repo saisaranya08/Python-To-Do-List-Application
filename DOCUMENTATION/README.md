@@ -16,12 +16,14 @@ A simple to-do list application built with Flask. This application allows users 
 
 # Screenshots
 
+
+### Web-interface of to-do-list-application
 ![Screenshot of to-do-list web interface](InterfaceScreen.png)
 
 
 
 
-
+### "After tasks are added and marked as complete, clicking 'Submit tasks' will display them as follows."
 ![Screenshot after adding and submission of tasks](Screenshot1.png)
 
 ## Installation
