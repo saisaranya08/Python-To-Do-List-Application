@@ -14,7 +14,7 @@ A simple to-do list application built with Flask. This application allows users 
 - Python 3.7 or later
 - Flask==2.3.3
 
-## Screenshots
+# Screenshots
 
 ![Screenshot of to-do-list web interface](InterfaceScreen.png)
 
