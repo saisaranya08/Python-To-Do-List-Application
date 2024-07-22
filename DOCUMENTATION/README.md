@@ -16,13 +16,13 @@ A simple to-do list application built with Flask. This application allows users 
 
 ## Screenshots
 
--- ![Screenshot of to-do-list web interface](screenshot%20.png)
+-- ![Screenshot of to-do-list web interface](Screenshot.png)
 
 
 
 
 
--- ![Screenshot after adding and submission of tasks](screenshot1.png)
+-- ![Screenshot after adding and submission of tasks](Screenshot1.png)
 
 ## Installation
 
