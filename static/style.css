@@ -1,0 +1,61 @@
+body {
+    background : burlywood url("img.avif") no-repeat center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+form {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    list-style: square;;
+    list-style-position: inside;
+    padding: 5px;
+}
+/* To Add colors based on priority */
+li.low{
+    background-color: #e1ffd3; /* Light green */
+    color: black;
+}
+li.low a{
+    color: darkcyan;
+}
+
+li.medium {
+    background-color: #fff5d3; /* Light yellow */
+    color: black;
+}
+li.medium a{
+    color: darkgoldenrod
+}
+
+li.high {
+      background-color: #ffd3d3; /* Light red */
+      color: black;
+}
+li.high a{
+    color: darkred;
+}
+.message{
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}

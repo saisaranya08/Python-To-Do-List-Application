@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form action="/" method="POST">
+        <input type="text" name="task" placeholder="Enter a new task" required>
+        <select name="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+    {% if message %}
+    <p class="message">{{ message }}</p>
+    {% endif %}
+    <ul>
+        {% for task in tasks %}
+        <li class="{{ task.priority }}">
+            {{ task.task }} [{{ '✓' if task.completed else '✗' }}]
+            {% if not task.completed %}
+                <form action="{{ url_for('complete', task_id=loop.index0) }}" method="POST" style="display:inline;">
+                    <button type="submit">Complete</button>
+                </form>
+            {% endif %}
+            <a href="{{ url_for('delete', task_id=loop.index0) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <form action="/" method="POST">
+        <button type="submit" name="submit_tasks">Submit Completed Tasks</button>
+    </form>
+</body>
+</html>
+
