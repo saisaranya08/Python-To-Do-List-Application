@@ -23,7 +23,7 @@ A simple to-do list application built with Flask. This application allows users 
 
 
 
-### "After tasks are added and marked as complete, clicking 'Submit tasks' will display them as follows."
+### After tasks are added and marked as complete, clicking 'Submit' will display them as follows
 ![Screenshot after adding and submission of tasks](Screenshot1.png)
 
 ## Installation
